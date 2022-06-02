@@ -1,0 +1,126 @@
+html, body {
+min-width: 300px;
+ background-color: rgb(241, 241, 241);
+ font-family: sans-serif;
+ line-height: 2;
+}
+
+
+
+#navbar {
+min-width: 200px; 
+width: 150px;
+height: 100%;
+position: fixed;
+top: 0px;
+left: 0px;
+border-right: solid;
+border-top: solid;
+border-color: rgb(0, 0, 0);
+list-style-type: none;
+}
+
+header {                             /* hmm */
+color: rgb(0, 0, 0);
+text-align: center;
+font-size: 25px; 
+font-weight: bold;
+}
+
+#main-doc header {                    /* header of all the document */
+    text-align:center;
+    margin-left: -50px;
+}
+
+#navbar ul {                   
+    height: 88%; 
+    list-style-type: none;
+    padding: 0;
+    
+    /*overflow-y: auto;  
+    overflow-x: hidden;     ????? */
+}
+
+#navbar li {                   /* navbar frame */
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    width: 100%;
+    position:relative;
+    color: black;
+    
+}
+
+#navbar a {                    /* navbar content (top1-top9) */
+    display:block; 
+    color: black;
+    padding-left: 20px; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+#main-doc {                   /* content (introd - all top1-9 )*/
+    margin-left: 270px;
+    margin-bottom: 30px;
+    padding-top: 30px;   
+    position: absolute;  /* ??? */
+        
+}
+
+section article {            /* Content (p) under  the Top1-9  */
+    font-size: 20px;
+    margin: auto;
+    padding-right: 40px;
+
+}
+
+
+code {                           /* code itself / content settings */
+    display: block;
+    text-align: center;
+    position: relative;
+    background-color: rgb(201, 201, 211);
+    font-style:italic;
+    padding: 15px;
+    margin: 10px 30px;
+    
+}
+
+span {
+    background-color: rgb(118, 118, 179);
+    text-align: center;
+    border-radius: 10%;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+
+   
+    #navbar ul {
+        border: 1px solid;
+        height: 200px;
+    }
+
+    #navbar {
+        background-color: rgb(26, 23, 23);
+        position: sticky;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 267px;
+        border: none;
+        z-index: 1;
+        border-bottom: 1px solid;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: auto;
+    }
+}
+
+
+
+
