@@ -1,27 +1,38 @@
 html, body {
 min-width: 300px;
- background-color: rgb(241, 241, 241);
+ background-color: rgb(0, 0, 0);
  font-family: sans-serif;
  line-height: 2;
+ color: white;
 }
 
+img {
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: rgb(2, 53, 19);;
+    max-width: 100%;
 
+}
+
+.fimg {
+    margin-left: 250px;
+}
 
 #navbar {
-min-width: 200px; 
-width: 150px;
+min-width: 260px; 
+width: 200px;
 height: 100%;
 position: fixed;
 top: 0px;
 left: 0px;
 border-right: solid;
 border-top: solid;
-border-color: rgb(0, 0, 0);
+border-color: rgb(4, 51, 8);
 list-style-type: none;
 }
 
 header {                             /* hmm */
-color: rgb(0, 0, 0);
+color: rgb(151, 82, 82);
 text-align: center;
 font-size: 25px; 
 font-weight: bold;
@@ -37,8 +48,8 @@ font-weight: bold;
     list-style-type: none;
     padding: 0;
     
-    /*overflow-y: auto;  
-    overflow-x: hidden;     ????? */
+    overflow-y: auto;  
+    overflow-x: hidden;     
 }
 
 #navbar li {                   /* navbar frame */
@@ -46,13 +57,13 @@ font-weight: bold;
     border-bottom: 1px solid;
     width: 100%;
     position:relative;
-    color: black;
+    color: rgb(2, 53, 19);
     
 }
 
 #navbar a {                    /* navbar content (top1-top9) */
     display:block; 
-    color: black;
+    color: rgb(255, 255, 255);
     padding-left: 20px; 
     padding-top: 5px;
     padding-bottom: 5px;
@@ -60,7 +71,8 @@ font-weight: bold;
 }
 
 #main-doc {                   /* content (introd - all top1-9 )*/
-    margin-left: 270px;
+    margin-left: 370px;
+    margin-right: 100px;
     margin-bottom: 30px;
     padding-top: 30px;   
     position: absolute;  /* ??? */
@@ -78,19 +90,27 @@ section article {            /* Content (p) under  the Top1-9  */
 code {                           /* code itself / content settings */
     display: block;
     text-align: center;
-    position: relative;
-    background-color: rgb(201, 201, 211);
+    position: static;
+    background-color: rgb(13, 46, 16);
     font-style:italic;
-    padding: 15px;
-    margin: 10px 30px;
+    padding: 11px;
+    margin: 10px 30px;             /* margin: 10px 30px; */
+    width: 50%;
+    margin-left: 23%;
+
+    
     
 }
 
 span {
-    background-color: rgb(118, 118, 179);
+    background-color: rgb(2, 66, 16);
     text-align: center;
     border-radius: 10%;
     padding: 5px;
+}
+
+hr {
+    margin-bottom: 40px;
 }
 
 @media only screen and (max-width: 815px) {
@@ -116,8 +136,13 @@ span {
 
     #main-doc {
         position: relative;
-        margin-left: 0px;
+        margin-left: 10px;
         margin-top: auto;
+        margin-right: 10px;
+    }
+
+    .fimg {
+        margin-left: 30px;
     }
 }
 
