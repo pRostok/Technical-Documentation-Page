@@ -31,14 +31,14 @@ border-color: rgb(4, 51, 8);
 list-style-type: none;
 }
 
-header {                             /* hmm */
+header {                           
 color: rgb(151, 82, 82);
 text-align: center;
 font-size: 25px; 
 font-weight: bold;
 }
 
-#main-doc header {                    /* header of all the document */
+#main-doc header {                   
     text-align:center;
     margin-left: -50px;
 }
@@ -52,7 +52,7 @@ font-weight: bold;
     overflow-x: hidden;     
 }
 
-#navbar li {                   /* navbar frame */
+#navbar li {                   
     border-top: 1px solid;
     border-bottom: 1px solid;
     width: 100%;
@@ -61,7 +61,7 @@ font-weight: bold;
     
 }
 
-#navbar a {                    /* navbar content (top1-top9) */
+#navbar a {                  
     display:block; 
     color: rgb(255, 255, 255);
     padding-left: 20px; 
@@ -70,31 +70,30 @@ font-weight: bold;
 
 }
 
-#main-doc {                   /* content (introd - all top1-9 )*/
+#main-doc {                  
     margin-left: 370px;
     margin-right: 100px;
     margin-bottom: 30px;
     padding-top: 30px;   
-    position: absolute;  /* ??? */
+    position: absolute;  
         
 }
 
-section article {            /* Content (p) under  the Top1-9  */
-    font-size: 20px;
+section article {           
     margin: auto;
     padding-right: 40px;
 
 }
 
 
-code {                           /* code itself / content settings */
+code {                           
     display: block;
     text-align: center;
     position: static;
     background-color: rgb(13, 46, 16);
     font-style:italic;
     padding: 11px;
-    margin: 10px 30px;             /* margin: 10px 30px; */
+    margin: 10px 30px;            
     width: 50%;
     margin-left: 23%;
 
